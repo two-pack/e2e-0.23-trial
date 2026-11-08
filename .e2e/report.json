@@ -1,7 +1,7 @@
 {
   "schemaVersion": "report-1",
   "run": {
-    "id": "01a1b902-11f9-7370-af35-a05e42774ee3",
+    "id": "01a1b903-7582-7e55-b671-da93bceed438",
     "specVersion": "0.1",
     "runner": {
       "name": "e2e",
@@ -9,8 +9,8 @@
     },
     "status": "passed",
     "exitCode": 0,
-    "startedAt": "2026-11-08T02:34:43.498Z",
-    "finishedAt": "2026-11-08T02:35:10.648Z",
+    "startedAt": "2026-11-08T02:36:14.523Z",
+    "finishedAt": "2026-11-08T02:36:25.547Z",
     "project": {
       "id": "e2e-0.23-trial",
       "configDigest": "7308a4679a2f51de04236b1c4ae344a6b366604ab7918ef3d85a12514b5dd1c5"
@@ -23,7 +23,7 @@
       "runtime": "node v24.22.2"
     },
     "vcs": {
-      "commit": "17b0bd92e1e88533ed4e25f446f3ec217917468f",
+      "commit": "3496014dc42f97ce8d26a4e09fe13677db83c881",
       "branch": "main",
       "dirty": false
     },
@@ -32,7 +32,7 @@
         "id": "web",
         "index": 0,
         "platform": "web",
-        "baseOrigin": "http://127.0.0.1:46311",
+        "baseOrigin": "http://127.0.0.1:45799",
         "environment": "test",
         "engine": {
           "name": "web",
@@ -81,20 +81,20 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1b902-154a-7d02-bfcf-2828cdab7ba9",
+            "id": "01a1b903-78e7-77a7-89be-7b9551fe7d5f",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-08T02:34:43.914Z",
-            "durationMs": 16609,
+            "startedAt": "2026-11-08T02:36:14.952Z",
+            "durationMs": 5867,
             "artifacts": [
               {
-                "id": "01a1b902-154a-7d02-bfcf-2828cdab7ba9:artifact:0",
+                "id": "01a1b903-78e7-77a7-89be-7b9551fe7d5f:artifact:0",
                 "kind": "screenshot",
                 "mediaType": "image/png",
                 "redaction": "complete",
                 "producer": {
                   "kind": "step",
-                  "stepId": "01a1b902-154a-7d02-bfcf-2828cdab7ba9:2"
+                  "stepId": "01a1b903-78e7-77a7-89be-7b9551fe7d5f:2"
                 },
                 "path": "add-todo-adds-a-todo-b6296ee9ff7ef0f0/attempt-1/screenshots/001-assert.png",
                 "size": 10220,
@@ -109,18 +109,18 @@
             },
             "steps": [
               {
-                "id": "01a1b902-154a-7d02-bfcf-2828cdab7ba9:0",
+                "id": "01a1b903-78e7-77a7-89be-7b9551fe7d5f:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.330Z",
-                "durationMs": 130,
+                "startedAt": "2026-11-08T02:36:15.395Z",
+                "durationMs": 104,
                 "events": [],
                 "artifacts": [],
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "changes": []
                 },
@@ -131,69 +131,51 @@
                 }
               },
               {
-                "id": "01a1b902-154a-7d02-bfcf-2828cdab7ba9:1",
+                "id": "01a1b903-78e7-77a7-89be-7b9551fe7d5f:1",
                 "index": 1,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "add a todo named {title}",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.465Z",
-                "durationMs": 7807,
+                "startedAt": "2026-11-08T02:36:15.503Z",
+                "durationMs": 252,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:44.468Z",
-                    "durationMs": 115,
+                    "startedAt": "2026-11-08T02:36:15.509Z",
+                    "durationMs": 103,
                     "status": "passed",
                     "bytes": 153,
                     "count": 8
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-08T02:34:48.761Z",
-                    "durationMs": 103,
+                    "startedAt": "2026-11-08T02:36:15.613Z",
+                    "durationMs": 72,
                     "status": "passed",
                     "name": "type",
                     "detail": "type \"Buy milk\" into textbox \"New todo\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:48.865Z",
-                    "durationMs": 101,
+                    "startedAt": "2026-11-08T02:36:15.686Z",
+                    "durationMs": 11,
                     "status": "passed",
                     "bytes": 180,
                     "count": 8
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-08T02:34:48.994Z",
-                    "durationMs": 39,
+                    "startedAt": "2026-11-08T02:36:15.697Z",
+                    "durationMs": 45,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Add\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:49.033Z",
-                    "durationMs": 95,
-                    "status": "passed",
-                    "bytes": 216,
-                    "count": 10
-                  },
-                  {
-                    "kind": "model",
-                    "startedAt": "2026-11-08T02:34:46.307Z",
-                    "durationMs": 5866,
-                    "status": "passed",
-                    "name": "executor",
-                    "count": 37983,
-                    "inputTokens": 37689,
-                    "outputTokens": 294
-                  },
-                  {
-                    "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:52.174Z",
-                    "durationMs": 95,
+                    "startedAt": "2026-11-08T02:36:15.742Z",
+                    "durationMs": 12,
                     "status": "passed",
                     "bytes": 216,
                     "count": 10
@@ -202,39 +184,23 @@
                 "agent": "default",
                 "artifacts": [],
                 "metrics": {
-                  "modelCalls": 1,
+                  "modelCalls": 0,
                   "actionSteps": 2,
                   "observationBytes": 216,
                   "contextBytes": 0,
-                  "ledgerBytes": 23
-                },
-                "model": {
-                  "provider": "@agentclientprotocol/claude-agent-acp",
-                  "model": "sonnet",
-                  "endpoint": "provider-default",
-                  "adapterVersion": "executor/claude-code@1",
-                  "policyVersion": "claude-code/1",
-                  "calls": 1,
-                  "tokenAccounting": "provider",
-                  "inputTokens": 37689,
-                  "outputTokens": 294,
-                  "peakTokensPerCall": 37983,
-                  "cacheReadTokens": 33189,
-                  "cacheWriteTokens": 4494,
-                  "estimatedCostUsd": 0.024542599999999998
+                  "ledgerBytes": 0
                 },
                 "cache": {
-                  "mode": "missed",
-                  "reason": "no-entry",
-                  "replayedActions": 0,
-                  "totalActions": 0,
+                  "mode": "self-finalized",
+                  "replayedActions": 2,
+                  "totalActions": 2,
                   "entry": "c2b36155e4f5fc063f7ebbd7214b32ff4e43eae6de34ee81b7579bdf62978107",
-                  "write": "saved"
+                  "write": "kept"
                 },
-                "observationRevision": "b8",
-                "explanation": "Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item and the status reads \"1 todo\".",
+                "observationRevision": "b4",
+                "explanation": "replayed 2 recorded action(s) zero-turn from the trace cache; recorded verdict: Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item and the status reads \"1 todo\".",
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 10,
                   "since": 0,
                   "changes": [
@@ -250,44 +216,44 @@
                 }
               },
               {
-                "id": "01a1b902-154a-7d02-bfcf-2828cdab7ba9:2",
+                "id": "01a1b903-78e7-77a7-89be-7b9551fe7d5f:2",
                 "index": 2,
                 "kind": "agent",
                 "api": "agent.assert",
                 "label": "\"Buy milk\" is listed and the count shows \"1 todo\"",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:52.273Z",
-                "durationMs": 8229,
+                "startedAt": "2026-11-08T02:36:15.756Z",
+                "durationMs": 5044,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:52.275Z",
-                    "durationMs": 95,
+                    "startedAt": "2026-11-08T02:36:17.529Z",
+                    "durationMs": 102,
                     "status": "passed",
                     "bytes": 216,
                     "count": 10
                   },
                   {
                     "kind": "model",
-                    "startedAt": "2026-11-08T02:34:52.370Z",
-                    "durationMs": 8095,
+                    "startedAt": "2026-11-08T02:36:17.632Z",
+                    "durationMs": 3117,
                     "status": "passed",
                     "name": "executor",
-                    "count": 26589,
-                    "inputTokens": 26434,
-                    "outputTokens": 155
+                    "count": 24858,
+                    "inputTokens": 24738,
+                    "outputTokens": 120
                   }
                 ],
                 "agent": "default",
                 "artifacts": [
-                  "01a1b902-154a-7d02-bfcf-2828cdab7ba9:artifact:0"
+                  "01a1b903-78e7-77a7-89be-7b9551fe7d5f:artifact:0"
                 ],
                 "metrics": {
                   "modelCalls": 1,
                   "actionSteps": 0,
                   "observationBytes": 216,
                   "contextBytes": 0,
-                  "ledgerBytes": 185
+                  "ledgerBytes": 203
                 },
                 "model": {
                   "provider": "@agentclientprotocol/claude-agent-acp",
@@ -297,17 +263,17 @@
                   "policyVersion": "claude-code/1",
                   "calls": 1,
                   "tokenAccounting": "provider",
-                  "inputTokens": 26434,
-                  "outputTokens": 155,
-                  "peakTokensPerCall": 26589,
-                  "cacheReadTokens": 25960,
-                  "cacheWriteTokens": 468,
-                  "estimatedCostUsd": 0.006030000000000001
+                  "inputTokens": 24738,
+                  "outputTokens": 120,
+                  "peakTokensPerCall": 24858,
+                  "cacheReadTokens": 20622,
+                  "cacheWriteTokens": 4112,
+                  "estimatedCostUsd": 0.020025300000000003
                 },
-                "observationRevision": "b10",
-                "explanation": "The screen shows the list \"Todos\" with the item \"Buy milk\", and the status reads \"1 todo\".",
+                "observationRevision": "b6",
+                "explanation": "The list \"Todos\" contains the item \"Buy milk\" and the status reads \"1 todo\".",
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 10,
                   "since": 1,
                   "changes": []
@@ -345,20 +311,20 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1b902-562e-734c-a042-29e626e78f92",
+            "id": "01a1b903-8fd5-7301-96a4-83d64681d10e",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-08T02:35:00.526Z",
-            "durationMs": 10064,
+            "startedAt": "2026-11-08T02:36:20.822Z",
+            "durationMs": 4661,
             "artifacts": [
               {
-                "id": "01a1b902-562e-734c-a042-29e626e78f92:artifact:0",
+                "id": "01a1b903-8fd5-7301-96a4-83d64681d10e:artifact:0",
                 "kind": "screenshot",
                 "mediaType": "image/png",
                 "redaction": "complete",
                 "producer": {
                   "kind": "step",
-                  "stepId": "01a1b902-562e-734c-a042-29e626e78f92:2"
+                  "stepId": "01a1b903-8fd5-7301-96a4-83d64681d10e:2"
                 },
                 "path": "add-todo-rejects-an-empty-title-e9f57c1867bbd02d/attempt-1/screenshots/001-assert.png",
                 "size": 11145,
@@ -373,18 +339,18 @@
             },
             "steps": [
               {
-                "id": "01a1b902-562e-734c-a042-29e626e78f92:0",
+                "id": "01a1b903-8fd5-7301-96a4-83d64681d10e:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:35:00.534Z",
-                "durationMs": 65,
+                "startedAt": "2026-11-08T02:36:20.829Z",
+                "durationMs": 71,
                 "events": [],
                 "artifacts": [],
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "changes": []
                 },
@@ -395,18 +361,18 @@
                 }
               },
               {
-                "id": "01a1b902-562e-734c-a042-29e626e78f92:1",
+                "id": "01a1b903-8fd5-7301-96a4-83d64681d10e:1",
                 "index": 1,
                 "kind": "agent",
                 "api": "agent.act",
                 "label": "press Add without typing a title",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:35:00.599Z",
-                "durationMs": 6726,
+                "startedAt": "2026-11-08T02:36:20.900Z",
+                "durationMs": 190,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:35:00.600Z",
+                    "startedAt": "2026-11-08T02:36:20.902Z",
                     "durationMs": 96,
                     "status": "passed",
                     "bytes": 153,
@@ -414,34 +380,16 @@
                   },
                   {
                     "kind": "engine",
-                    "startedAt": "2026-11-08T02:35:03.730Z",
-                    "durationMs": 78,
+                    "startedAt": "2026-11-08T02:36:20.999Z",
+                    "durationMs": 76,
                     "status": "passed",
                     "name": "tap",
                     "detail": "tap button \"Add\""
                   },
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:35:03.808Z",
-                    "durationMs": 96,
-                    "status": "passed",
-                    "bytes": 183,
-                    "count": 8
-                  },
-                  {
-                    "kind": "model",
-                    "startedAt": "2026-11-08T02:35:01.599Z",
-                    "durationMs": 5630,
-                    "status": "passed",
-                    "name": "executor",
-                    "count": 37154,
-                    "inputTokens": 36976,
-                    "outputTokens": 178
-                  },
-                  {
-                    "kind": "observation",
-                    "startedAt": "2026-11-08T02:35:07.230Z",
-                    "durationMs": 94,
+                    "startedAt": "2026-11-08T02:36:21.075Z",
+                    "durationMs": 13,
                     "status": "passed",
                     "bytes": 183,
                     "count": 8
@@ -450,39 +398,23 @@
                 "agent": "default",
                 "artifacts": [],
                 "metrics": {
-                  "modelCalls": 1,
+                  "modelCalls": 0,
                   "actionSteps": 1,
                   "observationBytes": 183,
                   "contextBytes": 0,
-                  "ledgerBytes": 23
-                },
-                "model": {
-                  "provider": "@agentclientprotocol/claude-agent-acp",
-                  "model": "sonnet",
-                  "endpoint": "provider-default",
-                  "adapterVersion": "executor/claude-code@1",
-                  "policyVersion": "claude-code/1",
-                  "calls": 1,
-                  "tokenAccounting": "provider",
-                  "inputTokens": 36976,
-                  "outputTokens": 178,
-                  "peakTokensPerCall": 37154,
-                  "cacheReadTokens": 32826,
-                  "cacheWriteTokens": 4144,
-                  "estimatedCostUsd": 0.0219445
+                  "ledgerBytes": 0
                 },
                 "cache": {
-                  "mode": "missed",
-                  "reason": "no-entry",
-                  "replayedActions": 0,
-                  "totalActions": 0,
+                  "mode": "self-finalized",
+                  "replayedActions": 1,
+                  "totalActions": 1,
                   "entry": "d2cb82c6e4122b5514a607fd6a9c6db210ce22405f4b185740f86ca4fb6d60bc",
-                  "write": "saved"
+                  "write": "kept"
                 },
-                "observationRevision": "b6",
-                "explanation": "Tapped Add with an empty title. The alert now reads \"Title is required\". The list still shows \"0 todos\".",
+                "observationRevision": "b3",
+                "explanation": "replayed 1 recorded action(s) zero-turn from the trace cache; recorded verdict: Tapped Add with an empty title. The alert now reads \"Title is required\". The list still shows \"0 todos\".",
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "since": 0,
                   "changes": [
@@ -496,44 +428,44 @@
                 }
               },
               {
-                "id": "01a1b902-562e-734c-a042-29e626e78f92:2",
+                "id": "01a1b903-8fd5-7301-96a4-83d64681d10e:2",
                 "index": 2,
                 "kind": "agent",
                 "api": "agent.assert",
                 "label": "the error \"Title is required\" is shown and no todo is listed",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:35:07.325Z",
-                "durationMs": 3256,
+                "startedAt": "2026-11-08T02:36:21.090Z",
+                "durationMs": 4386,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:35:07.327Z",
-                    "durationMs": 94,
+                    "startedAt": "2026-11-08T02:36:21.992Z",
+                    "durationMs": 99,
                     "status": "passed",
                     "bytes": 183,
                     "count": 8
                   },
                   {
                     "kind": "model",
-                    "startedAt": "2026-11-08T02:35:07.421Z",
-                    "durationMs": 3128,
+                    "startedAt": "2026-11-08T02:36:22.091Z",
+                    "durationMs": 3346,
                     "status": "passed",
                     "name": "executor",
-                    "count": 25739,
-                    "inputTokens": 25601,
-                    "outputTokens": 138
+                    "count": 24796,
+                    "inputTokens": 24673,
+                    "outputTokens": 123
                   }
                 ],
                 "agent": "default",
                 "artifacts": [
-                  "01a1b902-562e-734c-a042-29e626e78f92:artifact:0"
+                  "01a1b903-8fd5-7301-96a4-83d64681d10e:artifact:0"
                 ],
                 "metrics": {
                   "modelCalls": 1,
                   "actionSteps": 0,
                   "observationBytes": 183,
                   "contextBytes": 0,
-                  "ledgerBytes": 197
+                  "ledgerBytes": 215
                 },
                 "model": {
                   "provider": "@agentclientprotocol/claude-agent-acp",
@@ -543,17 +475,17 @@
                   "policyVersion": "claude-code/1",
                   "calls": 1,
                   "tokenAccounting": "provider",
-                  "inputTokens": 25601,
-                  "outputTokens": 138,
-                  "peakTokensPerCall": 25739,
-                  "cacheReadTokens": 25195,
-                  "cacheWriteTokens": 400,
-                  "estimatedCostUsd": 0.005511499999999999
+                  "inputTokens": 24673,
+                  "outputTokens": 123,
+                  "peakTokensPerCall": 24796,
+                  "cacheReadTokens": 20588,
+                  "cacheWriteTokens": 4081,
+                  "estimatedCostUsd": 0.0199225
                 },
-                "observationRevision": "b8",
-                "explanation": "The alert shows \"Title is required\" and the status reads \"0 todos\". No todo items are listed.",
+                "observationRevision": "b5",
+                "explanation": "Alert \"Title is required\" is shown and the status reads \"0 todos\"; no todo items are listed.",
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "since": 1,
                   "changes": []
@@ -591,20 +523,20 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1b902-154a-7bcd-bf02-11be20968bdd",
+            "id": "01a1b903-78e7-7f9a-9d07-98375f4bd8ae",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-08T02:34:43.914Z",
-            "durationMs": 5747,
+            "startedAt": "2026-11-08T02:36:14.951Z",
+            "durationMs": 5834,
             "artifacts": [
               {
-                "id": "01a1b902-154a-7bcd-bf02-11be20968bdd:artifact:0",
+                "id": "01a1b903-78e7-7f9a-9d07-98375f4bd8ae:artifact:0",
                 "kind": "screenshot",
                 "mediaType": "image/png",
                 "redaction": "complete",
                 "producer": {
                   "kind": "step",
-                  "stepId": "01a1b902-154a-7bcd-bf02-11be20968bdd:1"
+                  "stepId": "01a1b903-78e7-7f9a-9d07-98375f4bd8ae:1"
                 },
                 "path": "agent-smoke-agent-sees-the-todo-form-a8ab059976797df2/attempt-1/screenshots/001-assert.png",
                 "size": 9464,
@@ -619,18 +551,18 @@
             },
             "steps": [
               {
-                "id": "01a1b902-154a-7bcd-bf02-11be20968bdd:0",
+                "id": "01a1b903-78e7-7f9a-9d07-98375f4bd8ae:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.331Z",
-                "durationMs": 129,
+                "startedAt": "2026-11-08T02:36:15.395Z",
+                "durationMs": 104,
                 "events": [],
                 "artifacts": [],
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "changes": []
                 },
@@ -641,37 +573,37 @@
                 }
               },
               {
-                "id": "01a1b902-154a-7bcd-bf02-11be20968bdd:1",
+                "id": "01a1b903-78e7-7f9a-9d07-98375f4bd8ae:1",
                 "index": 1,
                 "kind": "agent",
                 "api": "agent.assert",
                 "label": "a todo form with a \"New todo\" input and an Add button is shown",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.464Z",
-                "durationMs": 5177,
+                "startedAt": "2026-11-08T02:36:15.501Z",
+                "durationMs": 5256,
                 "events": [
                   {
                     "kind": "observation",
-                    "startedAt": "2026-11-08T02:34:46.155Z",
-                    "durationMs": 117,
+                    "startedAt": "2026-11-08T02:36:17.050Z",
+                    "durationMs": 158,
                     "status": "passed",
                     "bytes": 153,
                     "count": 8
                   },
                   {
                     "kind": "model",
-                    "startedAt": "2026-11-08T02:34:46.273Z",
-                    "durationMs": 3252,
+                    "startedAt": "2026-11-08T02:36:17.209Z",
+                    "durationMs": 3451,
                     "status": "passed",
                     "name": "executor",
-                    "count": 24672,
-                    "inputTokens": 24537,
-                    "outputTokens": 135
+                    "count": 24686,
+                    "inputTokens": 24542,
+                    "outputTokens": 144
                   }
                 ],
                 "agent": "default",
                 "artifacts": [
-                  "01a1b902-154a-7bcd-bf02-11be20968bdd:artifact:0"
+                  "01a1b903-78e7-7f9a-9d07-98375f4bd8ae:artifact:0"
                 ],
                 "metrics": {
                   "modelCalls": 1,
@@ -688,17 +620,17 @@
                   "policyVersion": "claude-code/1",
                   "calls": 1,
                   "tokenAccounting": "provider",
-                  "inputTokens": 24537,
-                  "outputTokens": 135,
-                  "peakTokensPerCall": 24672,
-                  "cacheReadTokens": 20514,
-                  "cacheWriteTokens": 4019,
-                  "estimatedCostUsd": 0.0197802
+                  "inputTokens": 24542,
+                  "outputTokens": 144,
+                  "peakTokensPerCall": 24686,
+                  "cacheReadTokens": 20512,
+                  "cacheWriteTokens": 4026,
+                  "estimatedCostUsd": 0.019898000000000002
                 },
                 "observationRevision": "b2",
-                "explanation": "The screen shows the \"Todo\" heading, a \"New todo\" label and textbox, and an \"Add\" button. The status reads \"0 todos\".",
+                "explanation": "Screen shows the \"Todo\" heading, a \"New todo\" labelled textbox, and an \"Add\" button, along with an empty alert node and a \"0 todos\" status.",
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "since": 0,
                   "changes": []
@@ -736,11 +668,11 @@
         "status": "passed",
         "attempts": [
           {
-            "id": "01a1b902-154a-719c-aae9-1414043699e7",
+            "id": "01a1b903-78ee-7f77-aefe-03d3754c00ae",
             "index": 0,
             "status": "passed",
-            "startedAt": "2026-11-08T02:34:43.914Z",
-            "durationMs": 636,
+            "startedAt": "2026-11-08T02:36:14.958Z",
+            "durationMs": 595,
             "artifacts": [],
             "secondaryErrors": [],
             "cleanup": "complete",
@@ -750,18 +682,18 @@
             },
             "steps": [
               {
-                "id": "01a1b902-154a-719c-aae9-1414043699e7:0",
+                "id": "01a1b903-78ee-7f77-aefe-03d3754c00ae:0",
                 "index": 0,
                 "kind": "app",
                 "api": "app.open",
                 "label": "/",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.343Z",
-                "durationMs": 129,
+                "startedAt": "2026-11-08T02:36:15.389Z",
+                "durationMs": 110,
                 "events": [],
                 "artifacts": [],
                 "screen": {
-                  "location": "http://127.0.0.1:46311/",
+                  "location": "http://127.0.0.1:45799/",
                   "nodes": 8,
                   "changes": []
                 },
@@ -772,20 +704,20 @@
                 }
               },
               {
-                "id": "01a1b902-154a-719c-aae9-1414043699e7:1",
+                "id": "01a1b903-78ee-7f77-aefe-03d3754c00ae:1",
                 "index": 1,
                 "kind": "assertion",
                 "api": "expect.toBeVisible",
                 "label": "locator(\"body\")",
                 "status": "passed",
-                "startedAt": "2026-11-08T02:34:44.475Z",
-                "durationMs": 63,
+                "startedAt": "2026-11-08T02:36:15.501Z",
+                "durationMs": 46,
                 "events": [
                   {
                     "kind": "poll",
                     "name": "expect",
-                    "startedAt": "2026-11-08T02:34:44.476Z",
-                    "durationMs": 62,
+                    "startedAt": "2026-11-08T02:36:15.501Z",
+                    "durationMs": 46,
                     "status": "passed",
                     "count": 1
                   }
@@ -823,16 +755,16 @@
     "usage": {
       "discoveredResults": 4,
       "maxAgentContextBytes": 0,
-      "maxLedgerBytes": 197,
+      "maxLedgerBytes": 215,
       "maxObservationBytes": 216,
       "artifactBytes": 30829,
       "downloads": 0,
-      "events": 19,
-      "modelTokens": 152137,
+      "events": 15,
+      "modelTokens": 74340,
       "maxModelCallsInStep": 1,
       "maxActionStepsInStep": 2,
-      "modelCachedTokens": 137684,
-      "estimatedCostUsd": 0.0778088
+      "modelCachedTokens": 61722,
+      "estimatedCostUsd": 0.059845800000000005
     }
   }
 }
