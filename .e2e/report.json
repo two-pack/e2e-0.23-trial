@@ -1,0 +1,328 @@
+{
+  "schemaVersion": "report-1",
+  "run": {
+    "id": "01a1b901-44a9-725d-a879-81081435d5c4",
+    "specVersion": "0.1",
+    "runner": {
+      "name": "e2e",
+      "version": "0.23.0"
+    },
+    "status": "passed",
+    "exitCode": 0,
+    "startedAt": "2026-11-08T02:33:51.187Z",
+    "finishedAt": "2026-11-08T02:33:57.831Z",
+    "project": {
+      "id": "e2e-0.23-trial",
+      "configDigest": "7308a4679a2f51de04236b1c4ae344a6b366604ab7918ef3d85a12514b5dd1c5"
+    },
+    "environment": {
+      "ci": false,
+      "trustNoticeShown": false,
+      "os": "linux 6.18.54.1-microsoft-standard-WSL2",
+      "arch": "x64",
+      "runtime": "node v24.22.2"
+    },
+    "vcs": {
+      "commit": "55d054c71cac9cef6a7d4d7156fd6dbefc93532b",
+      "branch": "main",
+      "dirty": false
+    },
+    "targets": [
+      {
+        "id": "web",
+        "index": 0,
+        "platform": "web",
+        "baseOrigin": "http://127.0.0.1:45473",
+        "environment": "test",
+        "engine": {
+          "name": "web",
+          "version": "0.15.5",
+          "spiVersion": 1
+        },
+        "capabilities": [
+          "actions",
+          "artifacts",
+          "browser",
+          "keyboard",
+          "location",
+          "observation",
+          "pointer",
+          "state"
+        ],
+        "artifactCapabilities": [
+          "screenshot",
+          "video"
+        ],
+        "stateCapability": true
+      }
+    ],
+    "serialGroups": [],
+    "results": [
+      {
+        "id": "a8ab059976797df206a3998d1c0b22f77298c4ad940676aed6b45e8ccb540180",
+        "testId": "tests/agent-smoke.e2e.ts::agent%20sees%20the%20todo%20form",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "agent sees the todo form"
+        ],
+        "file": "tests/agent-smoke.e2e.ts",
+        "source": {
+          "file": "tests/agent-smoke.e2e.ts",
+          "line": 3,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1b901-496b-70eb-b95d-e21174a7ee97",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-08T02:33:51.724Z",
+            "durationMs": 6057,
+            "artifacts": [
+              {
+                "id": "01a1b901-496b-70eb-b95d-e21174a7ee97:artifact:0",
+                "kind": "screenshot",
+                "mediaType": "image/png",
+                "redaction": "complete",
+                "producer": {
+                  "kind": "step",
+                  "stepId": "01a1b901-496b-70eb-b95d-e21174a7ee97:1"
+                },
+                "path": "agent-smoke-agent-sees-the-todo-form-a8ab059976797df2/attempt-1/screenshots/001-assert.png",
+                "size": 9464,
+                "sha256": "700ead796212ab1e756b3d6446bc30934387b06c991c9f3ecdca30285c5b13b8"
+              }
+            ],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1b901-496b-70eb-b95d-e21174a7ee97:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-11-08T02:33:52.242Z",
+                "durationMs": 166,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://127.0.0.1:45473/",
+                  "nodes": 8,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/agent-smoke.e2e.ts",
+                  "line": 4,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1b901-496b-70eb-b95d-e21174a7ee97:1",
+                "index": 1,
+                "kind": "agent",
+                "api": "agent.assert",
+                "label": "a todo form with a \"New todo\" input and an Add button is shown",
+                "status": "passed",
+                "startedAt": "2026-11-08T02:33:52.411Z",
+                "durationMs": 5346,
+                "events": [
+                  {
+                    "kind": "observation",
+                    "startedAt": "2026-11-08T02:33:54.086Z",
+                    "durationMs": 112,
+                    "status": "passed",
+                    "bytes": 153,
+                    "count": 8
+                  },
+                  {
+                    "kind": "model",
+                    "startedAt": "2026-11-08T02:33:54.199Z",
+                    "durationMs": 3458,
+                    "status": "passed",
+                    "name": "executor",
+                    "count": 24704,
+                    "inputTokens": 24551,
+                    "outputTokens": 153
+                  }
+                ],
+                "agent": "default",
+                "artifacts": [
+                  "01a1b901-496b-70eb-b95d-e21174a7ee97:artifact:0"
+                ],
+                "metrics": {
+                  "modelCalls": 1,
+                  "actionSteps": 0,
+                  "observationBytes": 153,
+                  "contextBytes": 0,
+                  "ledgerBytes": 23
+                },
+                "model": {
+                  "provider": "@agentclientprotocol/claude-agent-acp",
+                  "model": "sonnet",
+                  "endpoint": "provider-default",
+                  "adapterVersion": "executor/claude-code@1",
+                  "policyVersion": "claude-code/1",
+                  "calls": 1,
+                  "tokenAccounting": "provider",
+                  "inputTokens": 24551,
+                  "outputTokens": 153,
+                  "peakTokensPerCall": 24704,
+                  "cacheReadTokens": 20512,
+                  "cacheWriteTokens": 4035,
+                  "estimatedCostUsd": 0.020024
+                },
+                "observationRevision": "b2",
+                "explanation": "Screen shows the \"Todo\" heading, a \"New todo\" label and textbox, and an \"Add\" button, so the todo form is displayed. It also shows an empty alert and the status \"0 todos\".",
+                "screen": {
+                  "location": "http://127.0.0.1:45473/",
+                  "nodes": 8,
+                  "since": 0,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/agent-smoke.e2e.ts",
+                  "line": 5,
+                  "column": 15
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b7d57535871b62b9504b92cbd13f832eec398a229df1a67dcdf78e376aca9549",
+        "testId": "tests/example.e2e.ts::app%20opens",
+        "kind": "test",
+        "declarationIndex": 0,
+        "titlePath": [
+          "app opens"
+        ],
+        "file": "tests/example.e2e.ts",
+        "source": {
+          "file": "tests/example.e2e.ts",
+          "line": 4,
+          "column": 1
+        },
+        "targetId": "web",
+        "platform": "web",
+        "agent": "default",
+        "repeat": 0,
+        "tags": [],
+        "selected": true,
+        "status": "passed",
+        "attempts": [
+          {
+            "id": "01a1b901-494a-745c-acc9-6b64a8eaf5d3",
+            "index": 0,
+            "status": "passed",
+            "startedAt": "2026-11-08T02:33:51.690Z",
+            "durationMs": 797,
+            "artifacts": [],
+            "secondaryErrors": [],
+            "cleanup": "complete",
+            "environment": {
+              "browser": "chromium 156.0.8078.4",
+              "user agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36"
+            },
+            "steps": [
+              {
+                "id": "01a1b901-494a-745c-acc9-6b64a8eaf5d3:0",
+                "index": 0,
+                "kind": "app",
+                "api": "app.open",
+                "label": "/",
+                "status": "passed",
+                "startedAt": "2026-11-08T02:33:52.236Z",
+                "durationMs": 165,
+                "events": [],
+                "artifacts": [],
+                "screen": {
+                  "location": "http://127.0.0.1:45473/",
+                  "nodes": 8,
+                  "changes": []
+                },
+                "source": {
+                  "file": "tests/example.e2e.ts",
+                  "line": 5,
+                  "column": 13
+                }
+              },
+              {
+                "id": "01a1b901-494a-745c-acc9-6b64a8eaf5d3:1",
+                "index": 1,
+                "kind": "assertion",
+                "api": "expect.toBeVisible",
+                "label": "locator(\"body\")",
+                "status": "passed",
+                "startedAt": "2026-11-08T02:33:52.404Z",
+                "durationMs": 70,
+                "events": [
+                  {
+                    "kind": "poll",
+                    "name": "expect",
+                    "startedAt": "2026-11-08T02:33:52.405Z",
+                    "durationMs": 70,
+                    "status": "passed",
+                    "count": 1
+                  }
+                ],
+                "artifacts": [],
+                "source": {
+                  "file": "tests/example.e2e.ts",
+                  "line": 6,
+                  "column": 41
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "summary": {
+      "discovered": 2,
+      "selected": 2,
+      "executed": 2,
+      "passed": 2,
+      "failed": 0,
+      "interrupted": 0,
+      "flaky": 0,
+      "skipped": 0
+    },
+    "limits": {
+      "maxAgentContextBytes": 16384,
+      "maxLedgerBytes": 8192,
+      "maxObservationBytes": 262144,
+      "maxEventsPerStep": 1000,
+      "maxModelTokensPerCall": 64000
+    },
+    "usage": {
+      "discoveredResults": 2,
+      "maxAgentContextBytes": 0,
+      "maxLedgerBytes": 23,
+      "maxObservationBytes": 153,
+      "artifactBytes": 9464,
+      "downloads": 0,
+      "events": 3,
+      "modelTokens": 24704,
+      "maxModelCallsInStep": 1,
+      "maxActionStepsInStep": 0,
+      "modelCachedTokens": 20512,
+      "estimatedCostUsd": 0.020024
+    }
+  }
+}
