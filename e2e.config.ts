@@ -1,5 +1,6 @@
 import type { E2EConfig } from 'e2e';
 import { web } from '@e2e-dev/web';
+import { claudeCode } from '@e2e-dev/acp';
 
 export default {
   targets: [{
@@ -10,4 +11,5 @@ export default {
       // command: { executable: 'npm', args: ['run', 'dev'] },
     },
   }],
+  agents: { default: { executor: claudeCode({ model: 'sonnet' }) } },
 } satisfies E2EConfig;

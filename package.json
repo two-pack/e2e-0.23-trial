@@ -9,7 +9,9 @@
     "test:e2e": "e2e run"
   },
   "devDependencies": {
-    "e2e": "^0.23.0",
-    "@e2e-dev/web": "^0.15.5"
+    "@agentclientprotocol/claude-agent-acp": "^0.101.0",
+    "@e2e-dev/acp": "^0.1.1",
+    "@e2e-dev/web": "^0.15.5",
+    "e2e": "^0.23.0"
   }
 }
