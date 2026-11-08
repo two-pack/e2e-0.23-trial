@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f8fafc; color: #0f172a; }
+    main { max-width: 420px; margin: 48px auto; padding: 0 16px; }
+    form { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    input { flex: 1; min-width: 160px; padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; }
+    button { padding: 8px 16px; border: 0; border-radius: 6px; background: #0f172a; color: #fff; cursor: pointer; }
+    #error { color: #b91c1c; min-height: 1.5em; }
+    ul { padding-left: 20px; }
+    #count { color: #475569; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Todo</h1>
+    <form id="form">
+      <label for="title">New todo</label>
+      <input id="title" name="title" autocomplete="off">
+      <button type="submit">Add</button>
+    </form>
+    <p id="error" role="alert"></p>
+    <ul id="list" aria-label="Todos"></ul>
+    <p id="count" role="status">0 todos</p>
+  </main>
+  <script>
+    const MAX_LENGTH = 20;
+    const form = document.getElementById('form');
+    const input = document.getElementById('title');
+    const error = document.getElementById('error');
+    const list = document.getElementById('list');
+    const count = document.getElementById('count');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const title = input.value.trim();
+
+      if (title === '') {
+        error.textContent = 'Title is required';
+        return;
+      }
+      if (title.length > MAX_LENGTH) {
+        error.textContent = `Title must be ${MAX_LENGTH} characters or fewer`;
+        return;
+      }
+
+      error.textContent = '';
+      const item = document.createElement('li');
+      item.textContent = title;
+      list.appendChild(item);
+      input.value = '';
+
+      const n = list.children.length;
+      count.textContent = `${n} ${n === 1 ? 'todo' : 'todos'}`;
+    });
+  </script>
+</body>
+</html>
