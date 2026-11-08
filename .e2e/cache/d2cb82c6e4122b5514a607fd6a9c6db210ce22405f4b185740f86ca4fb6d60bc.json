@@ -1,14 +1,14 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-08T02:35:10.590Z",
+  "createdAt": "2026-11-08T02:38:10.853Z",
   "payload": {
     "actions": [
       {
         "name": "tap",
-        "summary": "tap button \"Add\"",
+        "summary": "tap button \"Add todo\"",
         "target": {
           "role": "button",
-          "name": "Add"
+          "name": "Add todo"
         }
       }
     ],
@@ -24,7 +24,7 @@
       "callIndex": 0,
       "agent": "default"
     },
-    "summary": "Tapped Add with an empty title. The alert now reads \"Title is required\". The list still shows \"0 todos\".",
+    "summary": "I tapped Add todo with the title empty. An alert reading \"Title is required\" appeared, and the list still shows \"0 todos\".",
     "startPath": "/",
     "endPath": "/",
     "endAnchors": [
@@ -33,7 +33,7 @@
         "name": "Title is required"
       }
     ],
-    "endWaitMs": 13517,
+    "endWaitMs": 15066,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",

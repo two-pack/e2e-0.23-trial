@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace-1",
-  "createdAt": "2026-11-08T02:35:00.524Z",
+  "createdAt": "2026-11-08T02:37:45.310Z",
   "payload": {
     "actions": [
       {
@@ -14,10 +14,10 @@
       },
       {
         "name": "tap",
-        "summary": "tap button \"Add\"",
+        "summary": "tap button \"Add todo\"",
         "target": {
           "role": "button",
-          "name": "Add"
+          "name": "Add todo"
         }
       }
     ],
@@ -33,7 +33,7 @@
       "callIndex": 0,
       "agent": "default"
     },
-    "summary": "Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item and the status reads \"1 todo\".",
+    "summary": "Tapped \"Add todo\" with \"Buy milk\" entered. The list now shows the item \"Buy milk\", the status reads \"1 todo\", and the input is cleared.",
     "startPath": "/",
     "endPath": "/",
     "endAnchors": [
@@ -56,7 +56,7 @@
         "name": "0 todos"
       }
     ],
-    "endWaitMs": 13238,
+    "endWaitMs": 13392,
     "keyedBy": {
       "cacheSchema": "trace-1",
       "policyVersion": "conservative/6",
