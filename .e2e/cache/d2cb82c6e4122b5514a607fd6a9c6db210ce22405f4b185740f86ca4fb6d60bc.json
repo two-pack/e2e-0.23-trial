@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-08T02:35:10.590Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "tap",
+        "summary": "tap button \"Add\"",
+        "target": {
+          "role": "button",
+          "name": "Add"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/add-todo.e2e.ts::rejects%20an%20empty%20title",
+      "targetId": "web",
+      "instructionDigest": "efef00c332dff48bad4a605959e6dc86e03a6e6408e2c846610210937518d270",
+      "paramsDigest": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Tapped Add with an empty title. The alert now reads \"Title is required\". The list still shows \"0 todos\".",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "alert",
+        "name": "Title is required"
+      }
+    ],
+    "endWaitMs": 13517,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "d6343d360fe07db3d68e29cc992808318322336219ed2d341359d33896ea731f",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f9f49ed79c2662c7f6e0522da33af26cd0588919fce8b674530ba7c83e5d217c",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

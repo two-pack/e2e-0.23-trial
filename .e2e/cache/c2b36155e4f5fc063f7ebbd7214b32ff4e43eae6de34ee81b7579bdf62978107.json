@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "trace-1",
+  "createdAt": "2026-11-08T02:35:00.524Z",
+  "payload": {
+    "actions": [
+      {
+        "name": "type",
+        "summary": "type \"Buy milk\" into textbox \"New todo\"",
+        "target": {
+          "role": "textbox",
+          "name": "New todo"
+        },
+        "value": "Buy milk"
+      },
+      {
+        "name": "tap",
+        "summary": "tap button \"Add\"",
+        "target": {
+          "role": "button",
+          "name": "Add"
+        }
+      }
+    ],
+    "executor": {
+      "name": "claude-code",
+      "version": "1"
+    },
+    "recordedFor": {
+      "testId": "tests/add-todo.e2e.ts::adds%20a%20todo",
+      "targetId": "web",
+      "instructionDigest": "5dfd1e599f1ca6b7f76c554160308a91cbf2583ec94f2edcfab732520ffde3ee",
+      "paramsDigest": "6330399f2342cfc9311b85fb26dcac5b706b3080b49e3aadedde2f3a864efdc9",
+      "callIndex": 0,
+      "agent": "default"
+    },
+    "summary": "Typed \"Buy milk\" and tapped Add. The list now shows a \"Buy milk\" item and the status reads \"1 todo\".",
+    "startPath": "/",
+    "endPath": "/",
+    "endAnchors": [
+      {
+        "role": "status",
+        "name": "1 todo"
+      },
+      {
+        "role": "listitem",
+        "name": "Buy milk"
+      },
+      {
+        "role": "list",
+        "name": "Todos"
+      }
+    ],
+    "goneAnchors": [
+      {
+        "role": "status",
+        "name": "0 todos"
+      }
+    ],
+    "endWaitMs": 13238,
+    "keyedBy": {
+      "cacheSchema": "trace-1",
+      "policyVersion": "conservative/6",
+      "project": "d6343d360fe07db3d68e29cc992808318322336219ed2d341359d33896ea731f",
+      "platform": "web",
+      "engineName": "web",
+      "engineSpiVersion": 1,
+      "appIdentity": "f9f49ed79c2662c7f6e0522da33af26cd0588919fce8b674530ba7c83e5d217c",
+      "agentContextDigest": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}
